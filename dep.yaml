@@ -1,0 +1,26 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: atestb
+  labels:
+    app: atestb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: atestb
+  template:
+    metadata:
+      name: atestb
+      labels:
+        app: atestb
+    spec:
+      containers:
+        - name: atestb
+          image: registry.cn-hangzhou.aliyuncs.com/heyshop/atestb
+          command: 
+            - python
+          args:
+            - "run.py"
+
+
