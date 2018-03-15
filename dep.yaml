@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: atestb
-          image: registry.cn-hangzhou.aliyuncs.com/heyshop/atestb
+          image: registry.cn-hangzhou.aliyuncs.com/heyshop/atestb:latest
           imagePullPolicy: Always
           command: 
             - python
