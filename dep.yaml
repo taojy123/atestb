@@ -19,8 +19,9 @@ spec:
         - name: atestb
           image: registry.cn-hangzhou.aliyuncs.com/heyshop/atestb:latest
           command: 
-            - python
+            - bash
           args:
-            - run.py
+            - "-c"
+            - "python run.py"
 
 
