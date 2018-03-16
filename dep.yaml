@@ -23,6 +23,6 @@ spec:
             - bash
           args:
             - "-c"
-            - "python run.py; echo $BUILD_NUMBER"
+            - "python run.py"
 
 
